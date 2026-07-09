@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=Space+Mono:wght@400;700&amp;family=Noto+Serif+SC:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;background:#EEEADD;color:#191813;}
+  *{box-sizing:border-box;}
+  a{color:#D8393C;text-decoration:none;}
+  a:hover{color:#a82a2d;}
+  ::selection{background:#F5C400;color:#191813;}
+  @keyframes pr_rise{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:none;}}
+  video{display:block;width:100%;height:100%;object-fit:cover;}
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+<div style="font-family:'Space Grotesk',sans-serif;position:relative;overflow:hidden;background:
+  repeating-linear-gradient(0deg, transparent 0 63px, rgba(216,57,60,.11) 63px 64px),
+  repeating-linear-gradient(90deg, transparent 0 63px, rgba(216,57,60,.11) 63px 64px),
+  #EEEADD;">
+
+  <!-- scroll progress -->
+  <div ref="{{ progressRef }}" style="position:fixed;top:0;left:0;height:3px;width:0;background:#D8393C;z-index:60;"></div>
+
+  <!-- fixed top bar -->
+  <div style="position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px clamp(20px,4vw,60px);backdrop-filter:blur(8px);background:linear-gradient(180deg,rgba(238,234,221,.94),rgba(238,234,221,.72) 70%,rgba(238,234,221,0));">
+    <a href="index.html" style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#191813;display:flex;align-items:center;gap:9px;">← HOME</a>
+    <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#7c786c;">Chenxuan Li · Portfolio</div>
+    <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:8px;"><span style="width:9px;height:9px;background:#F5C400;display:inline-block;transform:rotate(45deg);"></span>02 / Prototyping</div>
+  </div>
+
+  
+
+<div style="max-width:none;margin:0;padding:0 clamp(24px,5vw,88px);">
+
+    <!-- HERO -->
+    <section data-screen-label="Hero" style="padding:168px 0 60px;">
+      <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#D8393C;animation:pr_rise .7s .05s both;">Prototyping · Visual Narrative</div>
+      
+      <h1 style="font-weight:700;font-size:clamp(52px,9vw,148px);line-height:.9;letter-spacing:-.04em;margin:18px 0 0;animation:pr_rise .9s .12s both;">Beyond<br>the Lines：</h1><div style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;margin-top:34px;align-items:flex-end;animation:pr_rise .9s .26s both;">
+        <p style="margin:0;font-family:'Noto Serif SC',serif;font-size:clamp(20px,2.4vw,30px);font-weight:600;line-height:1.35;max-width:20ch;color:#2a2822;">Reconstructing childhood diaries &amp; homework</p>
+        <div style="display:grid;grid-template-columns:repeat(3,auto);gap:34px;font-family:'Space Mono',monospace;font-size:12px;">
+          <div><div style="letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">Year</div><div style="margin-top:6px;font-size:15px;">2026</div></div>
+          <div><div style="letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">Field</div><div style="margin-top:6px;font-size:15px;">Typography</div></div>
+          <div><div style="letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">Type</div><div style="margin-top:6px;font-size:15px;">Visual Narrative</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE (collage of homework-paper layouts) -->
+    <section data-screen-label="Showcase" style="padding:8px 0 24px;">
+      <img src="assetsopt/proto-showcase.png" alt="Beyond the Lines — deconstructed homework-paper layouts" style="display:block;width:100%;height:auto;">
+    </section>
+
+    <!-- cover video (single, full width) -->
+    <section style="padding:20px 0 40px;">
+      
+    </section>
+
+    <!-- STATEMENT (reflection as intro) -->
+    <section data-screen-label="Statement" style="padding:70px 0;border-top:2px solid #191813;">
+      <div style="display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.6fr);gap:clamp(24px,5vw,80px);">
+        <div>
+          <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">Reflection · The Project</div>
+          <div style="margin-top:20px;font-family:'Noto Serif SC',serif;font-weight:700;font-size:clamp(26px,3vw,40px);line-height:1.25;color:#191813;">“Restricted writing” <span style="color:#D8393C;">→</span> “free expression.”</div>
+        </div>
+        <div style="font-size:clamp(15px,1.15vw,18px);line-height:1.72;color:#33312a;display:flex;flex-direction:column;gap:20px;text-wrap:pretty;">
+          <p style="margin:0;">I deconstructed the boxes and horizontal lines from my childhood homework books and diaries because these writing formats once determined how I wrote, how I expressed myself, and even how I was evaluated. To me, the boxes and lines are not only structures on paper, but also symbols of the rules, assignments, and standard answers that restricted me during childhood.</p>
+          <p style="margin:0;">Therefore, by breaking, shifting, blurring, and reorganizing these lines and frames, I transform the originally orderly writing system into a visual narrative — expressing my renewed understanding of, and release from, the sense of restriction in my childhood memories.</p>
+          <p style="margin:0;">What I want to express is that truly touching typography does not always have to follow strict rules. Design should be brave enough to follow one's own thoughts, emotions, and memories. Just as my childhood self should not have been limited by the boxes and lines of homework paper, my adult self does not want my design practice limited only by fixed rules.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY CONVERSATIONS -->
+    <section data-screen-label="Conversations" style="padding:64px 0;border-top:1px solid rgba(25,24,19,.2);">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:40px;">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">01 / Exploration</span>
+        <h2 style="margin:0;font-weight:700;font-size:clamp(28px,4vw,56px);letter-spacing:-.02em;">Key Conversations</h2>
+      </div>
+      <p style="margin:0 0 40px;max-width:82ch;font-size:clamp(16px,1.3vw,20px);line-height:1.7;color:#2a2822;text-wrap:pretty;">I extract everyday conversations from a single day of childhood life, including moments of playing, eating, and interacting with family. I reorganize these fragments into a diary-like narrative, using ordinary dialogue to reflect the warmth, rhythm, and blurred emotions of childhood memory.</p>
+      <div style="columns:2;column-gap:56px;font-family:'Noto Serif SC',serif;">
+        <div style="break-inside:avoid;margin-bottom:26px;padding-left:18px;border-left:3px solid #D8393C;">
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;font-weight:600;">“Mom, I don't want to eat vegetables.”</p>
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;color:#8a877c;">“You need to eat some vegetables too.”</p>
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;font-weight:600;">“I only want to eat meat.”</p>
+          <p style="margin:0;font-size:19px;line-height:1.5;color:#8a877c;">“Eating some vegetables is healthier.”</p>
+        </div>
+        <div style="break-inside:avoid;margin-bottom:26px;padding-left:18px;border-left:3px solid #191813;">
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;font-weight:600;">“Mom, where are my slippers?”</p>
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;color:#8a877c;">“They're by the table.”</p>
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;font-weight:600;">“I thought I left them by the bed.”</p>
+          <p style="margin:0;font-size:19px;line-height:1.5;color:#8a877c;">“Go put them on. Don't walk barefoot.”</p>
+        </div>
+        <div style="break-inside:avoid;margin-bottom:26px;padding-left:18px;border-left:3px solid #F5C400;">
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;font-weight:600;">“Come catch me! You can't catch me! Hahaha!”</p>
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;color:#8a877c;">“Foul!”</p>
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;font-weight:600;">“You're gonna miss!”</p>
+          <p style="margin:0 0 6px;font-size:19px;line-height:1.5;color:#8a877c;">“Block him! Block him!”</p>
+          <p style="margin:0;font-size:19px;line-height:1.5;font-weight:600;">“Hhhhh!”</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORATION -->
+    <section data-screen-label="Exploration" style="padding:64px 0;border-top:1px solid rgba(25,24,19,.2);">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:44px;">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">00 / Exploration</span>
+        <h2 style="margin:0;font-weight:700;font-size:clamp(28px,4vw,56px);letter-spacing:-.02em;">Objects · Form · Symbols</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0;align-items:end;overflow:visible;">
+
+        <figure style="margin:0;">
+          <figcaption style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#D8393C;margin-bottom:14px;display:flex;gap:10px;align-items:center;"><span style="width:8px;height:8px;background:#D8393C;display:inline-block;"></span>Key Objects</figcaption>
+          <img src="assetsopt/proto-objects.png" alt="Key objects — slippers, home cooking, courtyard play, basketball" style="display:block;width:114%;height:auto;margin-right:-14%;position:relative;z-index:1;">
+        </figure>
+
+        <figure style="margin:0;">
+          <figcaption style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#191813;margin-bottom:14px;display:flex;gap:10px;align-items:center;"><span style="width:8px;height:8px;background:#191813;display:inline-block;"></span>Form</figcaption>
+          <img src="assetsopt/proto-form.png" alt="Form — original homework books &amp; papers from Fuzhou No.1 Middle School" style="display:block;width:120%;height:auto;margin:0 -10%;position:relative;z-index:0;">
+        </figure>
+
+        <figure style="margin:0;">
+          <figcaption style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#1E8A50;margin-bottom:14px;display:flex;gap:10px;align-items:center;"><span style="width:8px;height:8px;background:#1E8A50;display:inline-block;"></span>Key Symbols</figcaption>
+          <img src="assetsopt/proto-symbols.png" alt="Key symbols — the boxes, tables and ruled lines of homework paper" style="display:block;width:114%;height:auto;margin-left:-14%;position:relative;z-index:1;">
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- EXPERIMENTS -->
+    <section data-screen-label="Experiments" style="padding:64px 0;border-top:1px solid rgba(25,24,19,.2);">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:24px;">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">02 / Experiments</span>
+        <h2 style="margin:0;font-weight:700;font-size:clamp(28px,4vw,56px);letter-spacing:-.02em;">Breaking the Grid</h2>
+      </div>
+      <p style="margin:0 0 40px;max-width:82ch;font-size:clamp(16px,1.3vw,20px);line-height:1.7;color:#2a2822;text-wrap:pretty;">The lines, grids, and frames from childhood diaries and schoolwork become the visual structure of this piece, cutting, obscuring, and reconstructing blurred childhood memories. Domestic scenes, food, slippers, and children at play are surrounded by these disciplined lines, expressing a childhood memory where warmth and restriction coexist.</p>
+      <div>
+        <img src="assetsopt/proto-experiments.png" alt="Breaking the grid — typography, picture-only and interaction experiments" style="display:block;width:100%;height:auto;">
+      </div>
+    </section>
+
+    <!-- BOOKLET -->
+    <section data-screen-label="Booklet" style="padding:64px 0;border-top:1px solid rgba(25,24,19,.2);">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:20px;">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">03 / Outcome</span>
+        <h2 style="margin:0;font-weight:700;font-size:clamp(28px,4vw,56px);letter-spacing:-.02em;">Booklet</h2>
+      </div>
+      <div>
+        <img src="assetsopt/proto-booklet.png" alt="Booklet — bound diary and homework-paper spreads" style="display:block;width:100%;height:auto;">
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section data-screen-label="Video" style="padding: 64px 0; border-top: 2px solid #191813; position: relative">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:12px;">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">04 / Outcome</span>
+        <h2 style="margin:0;font-weight:700;font-size:clamp(28px,4vw,56px);letter-spacing:-.02em;">Video</h2>
+      </div>
+      <p style="margin:0 0 40px;max-width:52ch;font-size:clamp(15px,1.1vw,17px);line-height:1.6;color:#33312a;">Four looping sequences — everyday childhood scenes with their handwriting fractured out of the homework grid, shifting and blurring line by line. <span style="color:#7c786c;">Click a screen to play.</span></p><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;">
+        <sc-for list="{{ videos }}" as="v" hint-placeholder-count="4">
+          <figure style="margin:0;">
+            <div style="position:relative;width:100%;aspect-ratio:1/1;cursor:pointer;overflow:hidden;background:transparent;" onClick="{{ v.toggle }}">
+              <video ref="{{ v.ref }}" loop="" playsinline="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;background:transparent;mix-blend-mode:multiply;z-index:2;"></video>
+              <div style="position:absolute;inset:0;display:{{ v.overlay }};align-items:center;justify-content:center;pointer-events:none;z-index:3;">
+                <span style="width:48px;height:48px;border-radius:50%;background:rgba(25,24,19,.55);display:flex;align-items:center;justify-content:center;">
+                  <span style="border-left:15px solid #fff;border-top:10px solid transparent;border-bottom:10px solid transparent;margin-left:4px;"></span>
+                </span>
+              </div>
+            </div>
+            
+          </figure>
+        </sc-for>
+      </div>
+      
+    </section>
+
+    <!-- EXHIBITION -->
+    <section data-screen-label="Exhibition" style="padding:64px 0;border-top:1px solid rgba(25,24,19,.2);">
+      <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:20px;">
+        <span style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">05 / Outcome</span>
+        <h2 style="margin:0;font-weight:700;font-size:clamp(28px,4vw,56px);letter-spacing:-.02em;">Exhibition</h2>
+      </div>
+      <div style="margin-bottom:36px;max-width:70ch;">
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#D8393C;margin-bottom:14px;">Interaction</div>
+        <ol style="margin:0;padding-left:1.1em;font-size:clamp(15px,1.1vw,17px);line-height:1.7;color:#33312a;">
+          <li style="margin-bottom:12px;">Audiences are invited to sign their names, leave comments about their own childhood, and give their childhood memory a score.</li>
+          <li>The marked-up sheets accumulate into a collective exhibition wall of remembered childhoods.</li>
+        </ol>
+      </div>
+      <div style="display:grid;grid-template-columns:1448fr 1254fr;gap:16px;align-items:stretch;">
+        <img src="assetsopt/proto-exhibition-1.jpg" alt="Exhibition — visitor viewing the four-screen installation" style="display:block;width:100%;height:100%;object-fit:cover;">
+        <img src="assetsopt/proto-exhibition-2.jpg" alt="Exhibition — four-screen wall with headphones and booklet plinth" style="display:block;width:100%;height:100%;object-fit:cover;">
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer style="padding:70px 0 90px;border-top:2px solid #191813;display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:flex-end;">
+      <div>
+        <div style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#7c786c;">End · 02 Prototyping</div>
+        <div style="font-weight:700;font-size:clamp(30px,4vw,56px);letter-spacing:-.02em;margin-top:10px;">Beyond the Lines</div>
+      </div>
+      <a href="index.html" style="font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;border:1px solid #191813;color:#191813;padding:12px 20px;">← Back to Index</a>
+    </footer>
+
+  </div></div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  state = { playing: {} };
+  progressRef = React.createRef();
+
+  componentDidMount() {
+    const EASE = 'cubic-bezier(.16,1,.3,1)';
+
+    // scroll-reveal: each section's children rise + fade in a stagger
+    this._io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        const kids = e.target.__revealKids || [];
+        kids.forEach((k, i) => {
+          setTimeout(() => { k.style.opacity = '1'; k.style.transform = 'none'; }, i * 130);
+        });
+        this._io.unobserve(e.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+    requestAnimationFrame(() => {
+      document.querySelectorAll('section[data-screen-label]').forEach((s) => {
+        if (s.getAttribute('data-screen-label') === 'Hero') return;
+        // exclude any block containing a <video> — a transform/opacity wrapper
+        // creates a stacking context that isolates the video's mix-blend-mode,
+        // making its baked-in white background reappear
+        const kids = Array.from(s.children).filter((k) => !k.querySelector('video'));
+        kids.forEach((k) => {
+          k.style.opacity = '0';
+          k.style.transform = 'translateY(54px)';
+          k.style.transition = 'opacity .9s ' + EASE + ', transform .9s ' + EASE;
+        });
+        s.__revealKids = kids;
+        this._io.observe(s);
+      });
+
+      // hover interaction on images — lift + zoom + light
+      document.querySelectorAll('section img').forEach((img) => {
+        img.style.transition = 'transform .55s ' + EASE + ', filter .55s ' + EASE;
+        img.style.willChange = 'transform';
+        const base = img.style.transform || '';
+        img.addEventListener('mouseenter', () => {
+          img.style.transform = base + ' scale(1.025)';
+          img.style.filter = 'contrast(1.06) saturate(1.08)';
+        });
+        img.addEventListener('mouseleave', () => {
+          img.style.transform = base;
+          img.style.filter = 'none';
+        });
+      });
+
+      // hover interaction on the conversation quote blocks — slide + accent
+      document.querySelectorAll('section[data-screen-label="Conversations"] div[style*="border-left"]').forEach((q) => {
+        q.style.transition = 'transform .4s ' + EASE + ', padding-left .4s ' + EASE;
+        q.addEventListener('mouseenter', () => { q.style.transform = 'translateX(10px)'; q.style.paddingLeft = '26px'; });
+        q.addEventListener('mouseleave', () => { q.style.transform = 'none'; q.style.paddingLeft = ''; });
+      });
+    });
+
+    // scroll-progress bar
+    this._onScroll = () => {
+      const el = this.progressRef.current; if (!el) return;
+      const h = document.documentElement;
+      const max = (h.scrollHeight - h.clientHeight) || 1;
+      el.style.width = Math.min(100, (h.scrollTop / max) * 100) + '%';
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+    window.removeEventListener('scroll', this._onScroll);
+  }
+
+  renderVals() {
+    const defs = [
+      { src: 'assets/video/proto-1.mp4', tag: 'Fig. 01 — Waking Up' },
+      { src: 'assets/video/proto-2.mp4', tag: 'Fig. 02 — Eating' },
+      { src: 'assets/video/proto-3.mp4', tag: 'Fig. 03 — Hide & Seek' },
+      { src: 'assets/video/proto-4.mp4', tag: 'Fig. 04 — Basketball' },
+    ];
+    return {
+      progressRef: this.progressRef,
+      videos: defs.map((d, i) => ({
+        src: d.src, tag: d.tag,
+        overlay: this.state.playing[i] ? 'none' : 'flex',
+        ref: (el) => { if (el && el.getAttribute('src') !== d.src) { el.src = d.src; } this['_v' + i] = el; },
+        toggle: () => {
+          const el = this['_v' + i]; if (!el) return;
+          if (el.paused) {
+            // pause every other clip so only this one's audio plays
+            const next = {};
+            defs.forEach((_, j) => {
+              if (j === i) return;
+              const o = this['_v' + j];
+              if (o && !o.paused) { o.pause(); }
+              next[j] = false;
+            });
+            el.muted = false; el.play();
+            next[i] = true;
+            this.setState({ playing: next });
+          } else {
+            el.pause();
+            this.setState(s => ({ playing: { ...s.playing, [i]: false } }));
+          }
+        },
+      })),
+    };
+  }
+}
+</script>
+</body>
+</html>
